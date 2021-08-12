@@ -1,0 +1,23 @@
+// colors 
+
+$navText:#222222;
+$grayText: #3c4043;
+$footerText: #70757a;
+
+$buttonColor: #f8f9fa;
+
+$BG: white;
+$footerBG: #f2f2f2;
+
+
+
+// Flexbox 
+
+@mixin flex($justifycontent) {
+    
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: center;
+
+}
+

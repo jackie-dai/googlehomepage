@@ -1,0 +1,108 @@
+.header {
+
+    nav {
+
+        display: flex;
+        height: 60px;
+        padding: 15px;
+
+
+        a {
+            
+            color: $navText;
+            padding: 0px 10px;
+
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    &__left {
+
+        @include flex(none);
+    }
+
+
+
+    &__right {
+
+        @include flex(flex-end);
+        flex: 1;
+
+
+
+            .icons {
+
+                display: flex;
+
+                padding-top: 5px;
+
+            }
+
+
+
+            .google-apps {
+                
+                
+                a {
+
+                    border-radius: 50%;
+                    width: 40px; 
+                    height: 40px;
+    
+                    &:hover {
+    
+                    background-color: rgba(0, 0, 0, .1);
+                    
+                    }
+
+                    svg {
+
+                        align-items: center;
+            
+                        width: 24px;
+                        height: 24px;
+                        transform: translate(4px, 4px);
+            
+                        color: #5f6368;
+                        fill: currentColor;
+
+                    }
+                }
+
+
+            }
+            
+            .pfp {
+                   
+                
+                a {
+
+                    border-radius: 50%;
+
+                    &:hover {
+
+                        background-color: rgba(0, 0, 0, .1);
+
+                    }
+                    
+                }
+
+                img {
+
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: inherit;
+
+                }
+
+
+
+
+
+            }   
+    }
+}
